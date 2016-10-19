@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Example webpack",
   "scripts": {
-    "start": "webpack-dev-server --colors --display-error-details --content-base src"
+    "start": "webpack-dev-server --hot --inline --progress --colors --display-error-details --content-base src"
   },
   "keywords": [
     "Angular",
