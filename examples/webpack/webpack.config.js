@@ -1,3 +1,6 @@
+var path = require('path');
+var HW = path.join(__dirname, 'helloworld/');
+var NODE_MODULES = path.join(__dirname, 'node_modules/');
 module.exports = {
     entry: "./src/main.ts",
     output: {
@@ -5,6 +8,7 @@ module.exports = {
     },
     devtool: 'source-map',
     resolve: {
+        root: [HW, NODE_MODULES],
         extensions: ['', '.webpack.js', '.web.js', '.ts',  '.js']
     },
     module: {

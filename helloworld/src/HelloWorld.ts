@@ -10,7 +10,8 @@ import {Component} from '@angular/core';
     `],
     template: `<div>
                   <h1 (click)="onClick()">{{message}}</h1>
-               </div>`
+               </div>
+               <welcome></welcome>`
 })
 export class HelloWorld {
 
